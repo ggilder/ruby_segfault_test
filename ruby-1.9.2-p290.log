@@ -1,0 +1,57 @@
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@ruby_segfault_test/gems/yard-0.7.5/lib/yard.rb:38: [BUG] Bus Error
+ruby 1.9.2p290 (2011-07-09 revision 32553) [x86_64-darwin11.0.1]
+
+-- control frame ----------
+c:0021 p:---- s:0062 b:0062 l:000061 d:000061 CFUNC  :callcc
+c:0020 p:0080 s:0059 b:0059 l:0008f0 d:0008f0 TOP    /Users/gabriel/.rvm/gems/ruby-1.9.2-p290@ruby_segfault_test/gems/yard-0.7.5/lib/yard.rb:38
+c:0019 p:---- s:0056 b:0056 l:000055 d:000055 FINISH
+c:0018 p:---- s:0054 b:0054 l:000053 d:000053 CFUNC  :require
+c:0017 p:0011 s:0050 b:0050 l:001418 d:001418 TOP    /Users/gabriel/oss/ruby_segfault_test/Rakefile:1
+c:0016 p:---- s:0048 b:0048 l:000047 d:000047 FINISH
+c:0015 p:---- s:0046 b:0046 l:000045 d:000045 CFUNC  :load
+c:0014 p:0013 s:0042 b:0042 l:001ca0 d:001ca0 METHOD /Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/rake_module.rb:25
+c:0013 p:0274 s:0038 b:0038 l:001d18 d:001d18 METHOD /Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:495
+c:0012 p:0009 s:0033 b:0033 l:0019a8 d:000f28 BLOCK  /Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:78
+c:0011 p:0009 s:0031 b:0031 l:001e00 d:001e00 METHOD /Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:129
+c:0010 p:0011 s:0027 b:0027 l:0019a8 d:0019a8 METHOD /Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:77
+c:0009 p:0019 s:0024 b:0024 l:0019d8 d:000cd8 BLOCK  /Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:61
+c:0008 p:0009 s:0022 b:0022 l:000260 d:000260 METHOD /Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:129
+c:0007 p:0011 s:0018 b:0018 l:0019d8 d:0019d8 METHOD /Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:59
+c:0006 p:0048 s:0015 b:0015 l:002258 d:002258 TOP    /Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/bin/rake:32
+c:0005 p:---- s:0013 b:0013 l:000012 d:000012 FINISH
+c:0004 p:---- s:0011 b:0011 l:000010 d:000010 CFUNC  :load
+c:0003 p:0127 s:0007 b:0007 l:001368 d:001110 EVAL   /Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/bin/rake:19
+c:0002 p:---- s:0004 b:0004 l:000003 d:000003 FINISH
+c:0001 p:0000 s:0002 b:0002 l:001368 d:001368 TOP   
+---------------------------
+-- Ruby level backtrace information ----------------------------------------
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/bin/rake:19:in `<main>'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/bin/rake:19:in `load'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/bin/rake:32:in `<top (required)>'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:59:in `run'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:129:in `standard_exception_handling'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:61:in `block in run'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:77:in `load_rakefile'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:129:in `standard_exception_handling'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:78:in `block in load_rakefile'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/application.rb:495:in `raw_load_rakefile'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/rake_module.rb:25:in `load_rakefile'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@global/gems/rake-0.9.2/lib/rake/rake_module.rb:25:in `load'
+/Users/gabriel/oss/ruby_segfault_test/Rakefile:1:in `<top (required)>'
+/Users/gabriel/oss/ruby_segfault_test/Rakefile:1:in `require'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@ruby_segfault_test/gems/yard-0.7.5/lib/yard.rb:38:in `<top (required)>'
+/Users/gabriel/.rvm/gems/ruby-1.9.2-p290@ruby_segfault_test/gems/yard-0.7.5/lib/yard.rb:38:in `callcc'
+
+-- C level backtrace information -------------------------------------------
+0   libruby.1.9.1.dylib                 0x0000000101d464fe rb_vm_bugreport + 110
+1   libruby.1.9.1.dylib                 0x0000000101c3a513 report_bug + 259
+2   libruby.1.9.1.dylib                 0x0000000101c3a681 rb_bug + 161
+3   libruby.1.9.1.dylib                 0x0000000101cdcf92 sigbus + 18
+4   libsystem_c.dylib                   0x00007fff8d4fecfa _sigtramp + 26
+5   ???                                 0x00007fff6180440e 0x0 + 140734829184014
+
+[NOTE]
+You may have encountered a bug in the Ruby interpreter or extension libraries.
+Bug reports are welcome.
+For details: http://www.ruby-lang.org/bugreport.html
+
